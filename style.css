@@ -410,3 +410,121 @@ nav ul li a:hover::after{
     text-align: center;
 }
 /*-------------------------------------------------------Responsive------------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+    /* Header */
+    nav .logo {
+        width: 60px;
+        height: 60px;
+    }
+    nav .name {
+        font-size: 25px;
+    }
+    nav .caret {
+        font-size: 30px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    /* Home */
+    section h1{
+        font-size: 30px;
+    }
+    .home {
+        margin: 80px 0px 0px 20px;
+    }
+    .home h2 {
+        font-size: 30px;
+    }
+    .home .pic img {
+        display: none;
+    }
+    .home p {
+        width: auto;
+        padding: 0px 10px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+    .home .download{
+        margin-left: 80px;
+    }
+    /* About */
+    .about .row{
+        padding: 5px 5px 10px 15px;
+    }
+    .about .row div{
+        width: 250px;
+        height: 100px;
+    }
+    .about .row div p{
+        font-size: 10px;
+    }
+    .about .row div:nth-child(odd){
+        margin-bottom: -20px;
+    }
+    .about .row div:nth-child(even) {
+        margin-left: 100px;
+    }
+    /* Experience */
+    .experience h3{
+        font-size: 20px;
+    }
+    .experience img {
+        width: 100%;
+        height: auto;
+    }
+    /* Project */
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+    /* Education */
+    .education .timeline .item{
+        width: 300px;
+        height: 100px;
+    }
+    .education .timeline .item span{
+        margin-left: 170px;
+    }
+    .education .timeline .item p{
+        font-size: 11px;
+    }
+    /* Certification */
+    .certification  .container {
+        padding: 0 10px;
+    }
+    .certification .swiper-slide img{
+        width: 300px;
+    }
+    .certification .swiper-button-prev {
+        top: 150px;
+        left: 0px;
+    }
+    .certification .swiper-button-next {
+        top: 150px;
+        right: 0px;
+    }
+    /* Services */
+    .services .card{
+        width: 350px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .services .card h3{
+        margin-top: -10px;
+        font-size: 20px;
+    }
+    .services .card p{
+        font-size: 14px;
+    }
+    .services .card a{
+        margin-top: 0px;
+    }
+    /* Contact */
+    .contact .info p{
+        font-size: 15px;
+    }
+    .contact .row input,
+    .contact .row textarea {
+        width: 100%;
+    }
+}
