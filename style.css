@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(to bottom left,cyan,black);
+}
+section{
+    color: white;
+}
+section h1 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+0% {
+    text-shadow: 0 0 10px #00ffff,
+                 0 0 20px #00ffff,
+                 0 0 30px #00ffff,
+                 0 0 40px #00ffff;
+}
+100% {
+    text-shadow: 0 0 20px #00ffff,
+                 0 0 40px #00ffff,
+                 0 0 60px #00ffff,
+                 0 0 80px #00ffff;
+    }
+}
+/*--------------------------------------------------------Header---------------------------------------------------------------------*/
+nav .head {
+    display: flex;
+    align-items: center;
+}
+nav .logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+nav .name{
+    font-size: 30px;
+    color: cyan;
+    margin: 5px 0px 0px 2px;
+}
+nav .caret {
+    font-size: 50px;
+}
+nav .dropdown-menu{
+    text-align: left;
+}
+nav .dropdown-menu li a{
+    text-align: left;
+    color: gray;
+}
+nav .dropdown-menu li a:hover{
+    background-color: rgba(245, 245, 220, 0);
+    color: white;
+}
+nav .dropdown-menu li a::after{
+    display: none;
+}
+nav ul li a{
+    margin: 10px 0px 0px 10px;
+    font-size: 18px;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: cyan;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/*--------------------------------------------------------Home-----------------------------------------------------------------------*/
+.home{
+    margin: 90px 0px 0px 80px;
+    color: white;
+}
+.home h2{
+    font-size: 40px;
+}
+.home span{
+    color: cyan;
+    text-shadow: 5px 5px 5px black;
+}
+.home .pic img{
+    width: 360px;
+    height: 360px;
+    margin-top: 40px;
+}
+.home p{
+    width: 700px;
+    line-height: 2.1;
+    word-spacing: 4px;
+    font-size: 18px;
+}
+.home .download button{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-style: none;
+    border:2px solid cyan;
+}
+.home .download button:hover{
+    color: black;
+    background-color: cyan;
+    border-color: white;
+}
+/*-------------------------------------------------------About-----------------------------------------------------------------------*/
+.about .row{
+    font-size: 16px;
+    font-weight: bold;
+}
+.about .row div{
+    background-color: white;
+}
+.about .row div:nth-child(odd){
+    padding: 20px 5px 0px 20px;
+    border-radius: 20px 20px 0px 20px;
+}
+.about .row div:nth-child(even){
+    padding: 20px 20px 0px 5px;
+    border-radius: 20px 20px 20px 0px;
+}
+.about .row p{
+    color: black;
+    padding: 10px;
+    background: linear-gradient(to bottom left, rgb(157, 160, 206), rgb(141, 212, 141));
+}
+.about .row p:nth-child(odd){
+    border-radius: 20px 20px 0px 20px;
+}
+.about .row p:nth-child(even){
+    border-radius: 20px 20px 0px 0px;
+}
+/*-------------------------------------------------------Experience------------------------------------------------------------------*/
+.experience img{
+    margin-top: 30px;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+.experience h3{
+    color: yellow;
+    font-weight: bold;
+}
+.experience li{
+    padding: 10px;
+    border: 2px dashed indianred;
+    list-style: none;
+}
+/*--------------------------------------------------------Project--------------------------------------------------------------------*/
+.project img{
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+.project li{
+    padding: 10px;
+    border: 2px dashed indianred;
+    list-style: none;
+}
+/*--------------------------------------------------------Skill----------------------------------------------------------------------*/
+.skill h2{
+    color: yellow;
+    font-weight: bold;
+}
+.skill h3{
+    color: tomato;
+    font-weight: bold;
+}
+.skill .images{
+    margin-left: 30px;
+}
+.skill .images img{
+    width: 40px;
+    margin: 0px 5px 10px 0px;
+}
+.skill .images p{
+    display: inline-block;
+    padding: 2px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(44, 221, 44);
+}
+.skill .images .html{
+    background-color: orangered;
+
+}
+.skill .images .css{
+    background-color: blue;
+
+}
+.skill .images .bs{
+    background-color: purple;
+}
+.skill .images .js{
+    background-color: yellow;
+}
+.skill .images .wix{
+    color: black;
+    background-color: white;
+}
+.skill .images .java{
+    background-color: rgb(25, 98, 128);
+}
+.skill .images .api{
+    background-color: black;
+}
+.skill .images .pm{
+    background-color: chocolate;
+}
+/*--------------------------------------------------------Education------------------------------------------------------------------*/
+.education {
+    text-align: center;
+}
+.education .timeline{
+    height: 360px;
+	padding: 0px 28px;
+	border-left: 1px solid white;
+    display: inline-block;
+    text-align: left;
+}
+.education .timeline .item{
+	position: relative;
+	padding: 0px 10px;
+	border: 1px solid white;
+	background-color: white;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 30px;
+    width: 500px;
+    height: 100px;
+}
+.education .timeline .item span{
+    margin-left: 370px;
+    font-size: 13px;
+    font-style: italic;
+}
+.education .timeline .item:hover{
+	box-shadow: 1px 1px 15px cyan;
+	border: 1px solid transparent;
+}
+.education .timeline .item::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	background-color: cyan;
+	border: 2px solid white;
+}
+.education .item h3{
+	font-size: 20px;
+	color: black;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.education .item h4{
+	color: #11a372;
+    font-weight: bold;
+}
+.education .item p{
+	line-height: 1.2;
+	color: black;
+	font-size: 15px;
+    font-weight: bold;
+}
+/*-----------------------------------------------------Certification-----------------------------------------------------------------*/
+.certification .swiper-container {
+    width: 100%;
+    height: fit-content;
+}
+.certification .swiper-slide {
+    text-align: center;
+    position: relative;
+}
+.certification .swiper-slide img {
+    border-radius: 30px;
+    width: 400px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+.certification .swiper-slide p:first-of-type {
+    color: cyan;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.certification .swiper-slide p:last-of-type {
+    color: rgb(251, 255, 0);
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.certification .swiper-pagination {
+    position: relative;
+}
+.certification .swiper-pagination-bullet-active {
+    background-color: white;
+}
+.certification .swiper-button-prev {
+    position: absolute;
+    left: 300px;
+    color: white;
+}
+.certification .swiper-button-next {
+    position: absolute;
+    right: 300px;
+    color: white;
+}
+/*--------------------------------------------------------Services-------------------------------------------------------------------*/
+.services .card {
+    background: linear-gradient(to bottom left,white,cyan);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.services .card:hover {
+    transform: translateY(-15px);
+}
+.services .card h3 {
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+}
+.services .card p {
+    font-size: 15px;
+    color: black;
+}
+.services .card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.services .card a:hover {
+    background-color: rgb(26, 73, 161);
+}
+/*--------------------------------------------------------Contact--------------------------------------------------------------------*/
+.contact .address  a{
+    text-decoration: none;
+}
+.contact .address i{
+    font-size: 25px;
+    margin-right: 20px;
+    color: white;
+}
+.contact .address p{
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+.contact .address .info{
+    padding: 10px;
+}
+.contact .address p:hover{
+    color: cyan;
+}
+.contact input,textarea {
+    width: 450px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+}
+.contact input:focus,textarea:focus{
+    border: 2px solid cyan;
+    outline: 2px solid cyan;
+}
+.contact .btn{
+    width: 100px;
+}
+.contact textarea{
+    color: black;
+    resize: vertical;
+}
+.contact #response{
+    color: lightgreen;
+    font-size: large;
+}
+/*--------------------------------------------------------Footer-----------------------------------------------------------------------*/
+.footer { 
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+/*-------------------------------------------------------Responsive------------------------------------------------------------------*/
