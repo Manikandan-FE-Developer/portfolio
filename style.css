@@ -92,14 +92,22 @@ nav ul li a:hover::after{
 .home h2{
     font-size: 40px;
 }
+.home h4{
+    font-size: 25px;
+    text-shadow: 5px 5px 15px black;
+    font-weight: bold;
+}
 .home span{
     color: cyan;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 15px black;
 }
 .home .pic img{
-    width: 360px;
-    height: 360px;
-    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 1px 1px 30px black;
 }
 .home p{
     width: 700px;
@@ -162,8 +170,6 @@ nav ul li a:hover::after{
 }
 .experience li{
     padding: 10px;
-    border: 2px dashed indianred;
-    list-style: none;
 }
 /*--------------------------------------------------------Project--------------------------------------------------------------------*/
 .project img{
@@ -171,10 +177,11 @@ nav ul li a:hover::after{
     height: 300px;
     border-radius: 25px;
 }
+.project h3{
+    color: yellow;
+}
 .project li{
     padding: 10px;
-    border: 2px dashed indianred;
-    list-style: none;
 }
 /*--------------------------------------------------------Skill----------------------------------------------------------------------*/
 .skill h2{
@@ -210,6 +217,9 @@ nav ul li a:hover::after{
 }
 .skill .images .bs{
     background-color: purple;
+}
+.skill .images .rjs{
+    background-color: aqua;
 }
 .skill .images .js{
     background-color: yellow;
@@ -296,7 +306,7 @@ nav ul li a:hover::after{
 .certification .swiper-slide img {
     border-radius: 30px;
     width: 400px;
-    height: 300px;
+    height: 400px;
     padding-bottom: 10px;
 }
 .certification .swiper-slide p:first-of-type {
@@ -318,11 +328,13 @@ nav ul li a:hover::after{
 }
 .certification .swiper-button-prev {
     position: absolute;
+    top: 200px;
     left: 300px;
     color: white;
 }
 .certification .swiper-button-next {
     position: absolute;
+    top: 200px;
     right: 300px;
     color: white;
 }
@@ -435,38 +447,56 @@ nav ul li a:hover::after{
     .home h2 {
         font-size: 30px;
     }
+    .home h4{
+        font-size: 15px;
+    }
     .home .pic img {
         display: none;
     }
     .home p {
         width: auto;
-        padding: 0px 10px;
-        font-size: 13px;
+        font-size: 10px;
         line-height: 1.8;
     }
     .home .download{
-        margin-left: 80px;
+        margin-left: 70px;
+    }
+    .home .download button{
+        font-size: 10px;
+    }
+    br{
+        display: none;
     }
     /* About */
     .about .row{
-        padding: 5px 5px 10px 15px;
+        padding: 5px 5px 10px 5px;
     }
     .about .row div{
-        width: 250px;
-        height: 100px;
+        width: 260px;
+        height: 70px;
     }
     .about .row div p{
-        font-size: 10px;
+        margin-top: -10px;
+        font-size: 8px;
     }
     .about .row div:nth-child(odd){
         margin-bottom: -20px;
     }
     .about .row div:nth-child(even) {
-        margin-left: 100px;
+        height: 65px;
+        margin-left: 50px;
     }
     /* Experience */
+    .experience h1{
+        font-size: 25px;
+    }
     .experience h3{
-        font-size: 20px;
+        font-size: 15px;
+    }
+    .experience li {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 5px;
     }
     .experience img {
         width: 100%;
@@ -476,6 +506,24 @@ nav ul li a:hover::after{
     .project img {
         width: 100%;
         height: auto;
+    }
+    .project h3{
+        font-size: 13px;
+    }
+    .project li {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    /* Skills */  
+    .skill h2{
+        font-size: 20px;
+    }
+    .skill h3{
+        font-size: 15px;
+    }
+    .skill .images p{
+        font-size: 15px;
     }
     /* Education */
     .education .timeline .item{
@@ -490,10 +538,18 @@ nav ul li a:hover::after{
     }
     /* Certification */
     .certification  .container {
+        width: 300px;
         padding: 0 10px;
     }
     .certification .swiper-slide img{
-        width: 300px;
+        width: 180px;
+        height: 280px;
+    }
+    .certification .swiper-slide p:first-of-type {
+        font-size: 15px;
+    }
+    .certification .swiper-slide p:last-of-type {
+        font-size: 11px;
     }
     .certification .swiper-button-prev {
         top: 150px;
@@ -505,18 +561,20 @@ nav ul li a:hover::after{
     }
     /* Services */
     .services .card{
-        width: 350px;
+        width: 320px;
         height: 180px;
         margin-bottom: 20px;
     }
     .services .card h3{
         margin-top: -10px;
-        font-size: 20px;
+        font-size: 19px;
     }
     .services .card p{
         font-size: 14px;
     }
     .services .card a{
+        width: 100px;
+        padding: 5px;
         margin-top: 0px;
     }
     /* Contact */
