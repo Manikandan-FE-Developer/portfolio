@@ -91,11 +91,20 @@ nav ul li a:hover::after{
 }
 .home h2{
     font-size: 40px;
+    text-shadow: 5px 5px 15px black;
 }
 .home h4{
     font-size: 25px;
+    color: magenta;
     text-shadow: 5px 5px 15px black;
     font-weight: bold;
+    padding: 8px 0px;
+    letter-spacing: 2px;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white;
 }
 .home span{
     color: cyan;
@@ -134,6 +143,7 @@ nav ul li a:hover::after{
 .about .row{
     font-size: 16px;
     font-weight: bold;
+    margin-top: 10px;
 }
 .about .row div{
     background-color: white;
@@ -336,6 +346,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    margin-top: 20px;
 }
 .services .card:hover {
     transform: translateY(-15px);
@@ -404,6 +415,7 @@ nav ul li a:hover::after{
 .contact #response{
     color: lightgreen;
     font-size: large;
+    display: none;
 }
 /*--------------------------------------------------------Footer-----------------------------------------------------------------------*/
 .footer { 
@@ -427,6 +439,9 @@ nav ul li a:hover::after{
     }
     nav ul li a {
         font-size: 14px;
+    }
+    nav ul li a:hover::after{
+        display: none;
     }
     /* Home */
     section h1{
@@ -523,6 +538,10 @@ nav ul li a:hover::after{
     .skill .images p{
         font-size: 15px;
     }
+    .skill .row{
+        display: flex;
+
+    }
     /* Education */
     .education .timeline .item{
         width: 300px;
@@ -548,7 +567,6 @@ nav ul li a:hover::after{
     .services .card{
         width: auto;
         height: 180px;
-        margin-bottom: 20px;
     }
     .services .card h3{
         margin-top: -10px;
