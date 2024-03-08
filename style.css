@@ -209,7 +209,6 @@ nav ul li a:hover::after{
 }
 .skill .images .html{
     background-color: orangered;
-
 }
 .skill .images .css{
     background-color: blue;
@@ -231,7 +230,10 @@ nav ul li a:hover::after{
 .skill .images .java{
     background-color: rgb(25, 98, 128);
 }
-.skill .images .api{
+.skill .images .git{
+    background-color: chocolate;
+}
+.skill .images .github{
     background-color: black;
 }
 .skill .images .pm{
@@ -295,19 +297,18 @@ nav ul li a:hover::after{
     font-weight: bold;
 }
 /*-----------------------------------------------------Certification-----------------------------------------------------------------*/
-.certification .swiper-container {
-    width: 100%;
-    height: fit-content;
-}
-.certification .swiper-slide {
+.certification .mySwiper{
     text-align: center;
-    position: relative;
+    width: 430px;
+    height: 530px;
 }
-.certification .swiper-slide img {
+.certification img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
     border-radius: 30px;
-    width: 400px;
-    height: 400px;
-    padding-bottom: 10px;
+    border: 2px solid white;
+    margin-bottom: 10px;
 }
 .certification .swiper-slide p:first-of-type {
     color: cyan;
@@ -320,23 +321,13 @@ nav ul li a:hover::after{
     letter-spacing: 2px;
     padding-bottom: 20px;
 }
-.certification .swiper-pagination {
-    position: relative;
-}
-.certification .swiper-pagination-bullet-active {
-    background-color: white;
-}
 .certification .swiper-button-prev {
-    position: absolute;
     top: 200px;
-    left: 300px;
-    color: white;
+    left: 0px;
 }
 .certification .swiper-button-next {
-    position: absolute;
     top: 200px;
-    right: 300px;
-    color: white;
+    right: 0px;
 }
 /*--------------------------------------------------------Services-------------------------------------------------------------------*/
 .services .card {
@@ -455,11 +446,12 @@ nav ul li a:hover::after{
     }
     .home p {
         width: auto;
-        font-size: 10px;
+        font-size: 11px;
+        padding: 0px 20px 0px 0px;
         line-height: 1.8;
     }
     .home .download{
-        margin-left: 70px;
+        margin-left: 90px;
     }
     .home .download button{
         font-size: 10px;
@@ -472,7 +464,7 @@ nav ul li a:hover::after{
         padding: 5px 5px 10px 5px;
     }
     .about .row div{
-        width: 260px;
+        width: 280px;
         height: 70px;
     }
     .about .row div p{
@@ -480,11 +472,14 @@ nav ul li a:hover::after{
         font-size: 8px;
     }
     .about .row div:nth-child(odd){
+        padding: 20px 5px 0px 5px;
         margin-bottom: -20px;
     }
     .about .row div:nth-child(even) {
+        padding: 20px 5px 5px 5px;
+        border-radius: 20px;
         height: 65px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     /* Experience */
     .experience h1{
@@ -522,6 +517,9 @@ nav ul li a:hover::after{
     .skill h3{
         font-size: 15px;
     }
+     .skill .images img{
+        width: 40px;
+    }
     .skill .images p{
         font-size: 15px;
     }
@@ -537,31 +535,18 @@ nav ul li a:hover::after{
         font-size: 11px;
     }
     /* Certification */
-    .certification  .container {
-        width: 300px;
-        padding: 0 10px;
-    }
-    .certification .swiper-slide img{
-        width: 180px;
-        height: 280px;
+    .certification .mySwiper{
+        width: 400px;
     }
     .certification .swiper-slide p:first-of-type {
         font-size: 15px;
     }
     .certification .swiper-slide p:last-of-type {
-        font-size: 11px;
-    }
-    .certification .swiper-button-prev {
-        top: 150px;
-        left: 0px;
-    }
-    .certification .swiper-button-next {
-        top: 150px;
-        right: 0px;
+        font-size: 13px;
     }
     /* Services */
     .services .card{
-        width: 320px;
+        width: auto;
         height: 180px;
         margin-bottom: 20px;
     }
