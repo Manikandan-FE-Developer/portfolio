@@ -48,15 +48,13 @@
     <section class="home" id="home">
         <div class="row">
             <div class="col-md-7">
-                <h2>I'm <span>Manikandan</span></h2><br>
-                <h4>Frontend Developer</h4><br>
+                <h2>I'm <span>Manikandan</span></h2>
+                <h4>Frontend Developer</h4>
                 <p>
                     As a frontend developer, I specialize in crafting engaging websites using HTML, CSS, JavaScript, and Bootstrap. I'm constantly learning and exploring new technologies, staying updated with the latest trends and tools to deliver high-quality work. You can check out my GitHub projects to see the tools I prefer and explore my Instapaper "Starred" list for insights into my interests and ongoing learning journey. Additionally, I enjoy working with APIs to create dynamic and interactive web experiences.
                 </p><br>
                 <div class="download">
-                    <a href="Manikandan_CV.pdf">
-                        <button onclick="downloadPDF()">DOWNLOAD CV</button>
-                    </a>
+                    <button id="downloadBtn">DOWNLOAD CV</button>
                 </div>              
             </div>
             <div class="col-md-5">
@@ -163,8 +161,8 @@
 <!--------------------------------------------------------Skill----------------------------------------------------------------------->
     <section id="skill" class="skill">
         <div class="container">
+            <h1>SKILLS</h1> 
             <div class="row">
-                <h1>SKILLS</h1> 
                 <div class="col-md-6">
                     <h2>Technical Skills</h2> 
                     <h3>Web Technologies</h3>
@@ -339,7 +337,7 @@
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success float-left">Send</button>
                             </div>
-                            <div id="response" style="display:none;">
+                            <div id="response">
                                 <p>Thank you for your message!</p>
                             </div>
                         </form>
