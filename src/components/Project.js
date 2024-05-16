@@ -5,7 +5,7 @@ export default function Project(){
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                        <img src="/images/projects/ecommerce.png" alt="pro1"/>
+                        <img src="images/projects/ecommerce.png" alt="pro1"/>
                     </div>
                     <div className="col-md-6">
                         <a href="https://e-commerce-r0a8.onrender.com/" target="_blank" rel="noopener noreferrer">

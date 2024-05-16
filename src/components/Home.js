@@ -28,7 +28,7 @@ export default function Home(){
                 </div>
                 <div className="col-md-5">
                     <div className="pic">
-                        <img src="/images/myPic.jpg" alt="myPic"/>
+                        <img src="images/myPic.jpg" alt="myPic"/>
                     </div>
                 </div>
             </div><br/>
