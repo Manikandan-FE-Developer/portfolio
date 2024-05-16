@@ -1,0 +1,684 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(to bottom left,cyan,black);
+}
+section{
+  color: white;
+}
+section h1 {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+0% {
+  text-shadow: 0 0 10px #00ffff,
+               0 0 20px #00ffff,
+               0 0 30px #00ffff,
+               0 0 40px #00ffff;
+}
+100% {
+  text-shadow: 0 0 20px #00ffff,
+               0 0 40px #00ffff,
+               0 0 60px #00ffff,
+               0 0 80px #00ffff;
+  }
+}
+/*--------------------------------------------------------Header---------------------------------------------------------------------*/
+nav .head {
+  display: flex;
+  align-items: center;
+}
+nav .logo{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 10px;
+}
+nav .name{
+  font-size: 30px;
+  color: cyan;
+  margin: 5px 0px 0px 2px;
+}
+nav .caret {
+  font-size: 50px;
+}
+nav .dropdown-menu{
+  text-align: left;
+}
+nav .dropdown-menu li a{
+  text-align: left;
+  color: gray;
+}
+nav .dropdown-menu li a:hover{
+  background-color: rgba(245, 245, 220, 0);
+  color: white;
+}
+nav .dropdown-menu li a::after{
+  display: none;
+}
+nav ul li a{
+  margin: 10px 0px 0px 10px;
+  font-size: 18px;
+}
+nav ul li a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background: cyan;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+#home,#experience,#project,#skill,#education,#certification,#services,#contact {
+    scroll-margin-top: 80px;
+}
+/*--------------------------------------------------------Home-----------------------------------------------------------------------*/
+.home{
+  margin: 90px 0px 60px 80px;
+  color: white;
+}
+.home h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+.home span{
+  color: black;
+  text-shadow: 
+  -1px -1px 0 white,  
+   1px -1px 0 white,
+  -1px  1px 0 white,
+   1px  1px 0 white;
+}
+.home h4{
+  font-size: 40px;
+  background: linear-gradient(90deg, rgb(203, 27, 203), blue, rgb(203, 27, 203));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  
+  font-weight: bold;
+  padding: 8px 0px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 3px solid black;
+  white-space: nowrap;
+  margin: 0;
+  animation: typing 3s steps(30, end), cursor .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 60%; }
+}
+@keyframes cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+.home p{
+  width: 700px;
+  line-height: 2.1;
+  word-spacing: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.home .pic img{
+  width: 350px;
+  height: 350px;
+  margin-top: 60px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 1px 1px 30px black;
+}
+.home .download button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  border-style: none;
+  border:2px solid cyan;
+}
+.home .download button:hover{
+  color: black;
+  background-color: cyan;
+  border-color: white;
+}
+/*-------------------------------------------------------About-----------------------------------------------------------------------*/
+.about p {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.about:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about .row{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.about .row div{
+  background-color: white;
+}
+.about .row div:nth-child(odd){
+  padding: 20px 5px 0px 20px;
+  border-radius: 20px 20px 0px 20px;
+}
+.about .row div:nth-child(even){
+  padding: 20px 20px 0px 5px;
+  border-radius: 20px 20px 20px 0px;
+}
+.about .row p{
+  color: black;
+  padding: 10px;
+  background: linear-gradient(to bottom left, rgb(157, 160, 206), rgb(141, 212, 141));
+}
+.about .row p:nth-child(odd){
+  border-radius: 20px 20px 0px 20px;
+}
+.about .row p:nth-child(even){
+  border-radius: 20px 20px 0px 0px;
+}
+/*-------------------------------------------------------Experience------------------------------------------------------------------*/
+.experience img{
+  margin-top: 30px;
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+}
+.experience h3{
+  background: linear-gradient(90deg, orangered, yellow, orangered, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  
+  font-weight: bold;
+}
+.experience .flex{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-shadow: 
+  -1px -1px 0 white,  
+   1px -1px 0 white,
+  -1px  1px 0 white,
+   1px  1px 0 white;
+  
+}
+.experience li{
+  padding: 5px;
+}
+/*--------------------------------------------------------Project--------------------------------------------------------------------*/
+/* .project .container{
+  display: flex;
+  justify-content: space-between;
+} */
+.project .row{
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.224);
+}
+.project img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.project h3{
+  color: yellow;
+  font-weight: bold;
+}
+.project li{
+  padding: 10px;
+}
+/*--------------------------------------------------------Skill----------------------------------------------------------------------*/
+.skill .row{
+  background-color: white;
+  overflow-y: hidden;
+}
+.skill .row::-webkit-scrollbar{
+  display: none;
+}
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.skill .images{
+  display: flex;
+  justify-content: space-between;
+}
+.skill .images img{
+  width: 60px;
+  padding: 15px 0px;
+}
+.skill .images p{
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+.skill .images .html{
+  background-color: orangered;
+}
+.skill .images .css{
+  background-color: blue;
+}
+.skill .images .bs{
+  background-color: purple;
+}
+.skill  img[alt="react"] {
+  width: 70px;
+}
+.skill .images .rjs{
+  background-color: aqua;
+}
+.skill .images .js{
+  background-color: yellow;
+}
+.skill .images .wix{
+  color: white;
+  background-color: black;
+}
+.skill .images .git{
+  background-color: rgb(231, 91, 40);
+}
+.skill .images .github{
+  background-color: black;
+}
+.skill .images .pm{
+  background-color: orangered;
+}
+/*--------------------------------------------------------Education------------------------------------------------------------------*/
+.education {
+  text-align: center;
+}
+.education .timeline{
+  height: 360px;
+  padding: 0px 28px;
+  border-left: 1px solid white;
+  display: inline-block;
+  text-align: left;
+}
+.education .timeline .item{
+  position: relative;
+  padding: 0px 10px;
+  border: 1px solid white;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 30px;
+  width: 500px;
+  height: 100px;
+}
+.education .timeline .item span{
+  margin-left: 370px;
+  font-size: 13px;
+  font-style: italic;
+}
+.education .timeline .item:hover{
+box-shadow: 1px 1px 15px cyan;
+border: 1px solid transparent;
+}
+.education .timeline .item::before{
+content: '';
+position: absolute;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+right: calc(100% + 22px);
+background-color: cyan;
+border: 2px solid white;
+}
+.education .item h3{
+font-size: 20px;
+color: black;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.education .item h4{
+color: #11a372;
+  font-weight: bold;
+}
+.education .item p{
+line-height: 1.2;
+color: black;
+font-size: 15px;
+  font-weight: bold;
+}
+/*-----------------------------------------------------Certification-----------------------------------------------------------------*/
+.certification .swiper{
+  text-align: center;
+  width: 300px;
+  margin-left: 400px;
+}
+.certification img{
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+.certification .swiper-slide p:first-of-type {
+  color: cyan;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.certification .swiper-slide p:last-of-type {
+  color: rgb(251, 255, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+/*--------------------------------------------------------Services-------------------------------------------------------------------*/
+.services .card {
+  background: linear-gradient(to bottom left,white,cyan);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+.services .card:hover {
+  transform: translateY(-15px);
+}
+.services .card h3 {
+  font-size: 23px;
+  color: black;
+  font-weight: bold;
+}
+.services .card p {
+  font-size: 15px;
+  color: black;
+}
+.services .card a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.services .card a:hover {
+  background-color: rgb(26, 73, 161);
+}
+/*--------------------------------------------------------Contact--------------------------------------------------------------------*/
+.contact .address  a{
+  text-decoration: none;
+}
+.contact .address i{
+  font-size: 25px;
+  margin-right: 20px;
+  color: white;
+}
+.contact .address p{
+  text-align: left;
+  font-size: 20px;
+  color: white;
+}
+.contact .address .info{
+  padding: 10px;
+}
+.contact .address p:hover{
+  color: cyan;
+}
+.contact input,textarea {
+  width: 450px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+}
+.contact input:focus,textarea:focus{
+  border: 2px solid cyan;
+  outline: 2px solid cyan;
+}
+.contact .btn{
+  width: 100px;
+}
+.contact textarea{
+  color: black;
+  resize: vertical;
+}
+.contact #response{
+  color: lightgreen; 
+  font-size: large;
+  display: none;
+}
+/*--------------------------------------------------------Footer-----------------------------------------------------------------------*/
+.footer { 
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+/*-------------------------------------------------------Responsive------------------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+  /* Header */
+  nav .logo {
+    width: 60px;
+    height: 60px;
+  }
+  nav .name {
+    font-size: 25px;
+  }
+  nav .navbar-toggle{
+    margin: 15px 30px;
+  }
+  nav .caret {
+    font-size: 30px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  nav ul li a:hover::after{
+    display: none;
+  }
+  #home,#experience,#project,#skill,#education,#certification,#services,#contact {
+    scroll-margin-top: 50px;
+  }
+  /* Home */
+  section h1{
+    font-size: 25px;
+  }
+  .home {
+    margin: 60px 0px 0px 20px;
+  }
+  .home h2 {
+    font-size: 25px;
+  }
+  .home h4{
+    font-size: 23px;
+  }
+  .home .pic img {
+    display: none;
+  }
+  .home p {
+    width: auto;
+    font-size: 12px;
+    padding: 0px 20px 0px 0px;
+    line-height: 2.0;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .home .download{
+    margin: 20px 0px 0px 70px;
+  }
+  .home .download button{
+    font-size: 12px;
+  }
+  br{
+    display: none;
+  }
+  /* About */
+  .about .row{
+    padding: 5px 5px 10px 15px;
+  }
+  .about .row div{
+    width: 240px;
+    height: 70px;
+  }
+  .about .row div p{
+    margin-top: -10px;
+    font-size: 8px;
+  }
+  .about .row div:nth-child(odd){
+    padding: 20px 5px 0px 5px;
+    margin-bottom: -30px;
+  }
+  .about .row div:nth-child(even) {
+    padding: 20px 5px 5px 5px;
+    border-radius: 20px;
+    height: 70px;
+    margin-left: 80px;
+  }
+  /* Experience */
+  .experience h3{
+      font-size: 18px;
+  }
+  .experience .flex{
+    font-size: 12px;
+  }
+  .experience li {
+      padding: 5px;
+      font-size: 10px;
+      margin-left: 5px;
+  }
+  .experience img {
+      width: 100%;
+      height: auto;
+  }
+  /* Project */
+  .project {
+    padding: 15px;
+  }
+  .project img {
+      width: 100%;
+      height: auto;
+  }
+  .project h3{
+      font-size: 12px;
+  }
+  .project li {
+      padding: 5px;
+      font-size: 8px;
+      margin-left: 5px;
+  }
+  /* Skills */  
+  .skill h2{
+      font-size: 20px;
+  }
+  .skill h3{
+      font-size: 15px;
+  }
+  .skill .images div{
+    text-align: center;
+    padding-right: 50px;
+  }
+  .skill .images img{
+      width: 40px;
+  }
+  .skill .images p{
+      font-size: 13px;
+  }
+  .skill .row{
+      display: flex;
+  }
+  /* Education */
+  .education .timeline{
+    height: 300px;
+  }
+  .education .timeline .item{
+      width: 250px;
+      height: 80px;
+  }
+  .education .timeline .item::before{
+    width: 13px;
+    height: 13px;
+  }
+  .education .timeline .item h3{
+    font-size: 10px;
+  }
+  .education .timeline .item span{
+      margin-left: 155px;
+      font-size: 10px;
+  }
+  .education .timeline .item p{
+      font-size: 10px;
+  }
+  .education .timeline .item h4{
+    font-size: 15px;
+  }
+  /* Certification */
+  .certification img{
+    width: 200px;
+  }
+  .certification .swiper{
+    width: 200px;
+    margin-left: 50px;
+  }
+  .certification .swiper-slide p:first-of-type {
+      font-size: 15px;
+  }
+  .certification .swiper-slide p:last-of-type {
+      font-size: 10px;
+  }
+  /* Services */
+  .services .card{
+      width: auto;
+      height: 150px;
+      padding: 30px 20px;
+  }
+  .services .card h3{
+      margin-top: -10px;
+      font-size: 17px;
+  }
+  .services .card p{
+      font-size: 12px;
+  }
+  .services .card a{
+      width: 100px;
+      padding: 5px;
+      margin-top: 0px;
+  }
+  /* Contact */
+  .contact .info p{
+      font-size: 14px;
+  }
+  .contact .row input,
+  .contact .row textarea {
+      width: 100%;
+      font-size: 14px;
+  }
+  .footer { 
+    font-size: 11px;
+  }
+}
