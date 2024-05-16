@@ -13,7 +13,8 @@ export default function Project(){
                         </a>
                         <div>
                             <ul>
-                                <li>Developed a dynamic E-Commerce platform using the MERN stack. Integrated React.js for intuitive user interfaces, revolutionizing online shopping experiences.</li>
+                                <li>Developed a dynamic E-Commerce platform using the MERN stack. </li>
+                                <li>Integrated React.js for intuitive user interfaces, revolutionizing online shopping experiences.</li>
                                 <li>Implemented robust backend functionalities with Node.js and Express.js. Utilized MongoDB for efficient data storage and management.</li>
                             </ul>
                         </div>
@@ -30,7 +31,8 @@ export default function Project(){
                         <div>
                             <ul>
                                 <li>Created a dynamic todo list website for efficient task management with real-time updates.</li>
-                                <li>Implemented local storage for seamless access to tasks across sessions and designed a user-friendly interface for easy task manipulation.</li>
+                                <li>Implemented local storage for seamless access to tasks across sessions</li>
+                                <li>designed a user-friendly interface for easy task manipulation.</li>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +48,8 @@ export default function Project(){
                         <div>
                             <ul>
                                 <li>Integrated ChatGPT into a Wix website for enhanced user engagement and support.</li>
-                                <li>Collaborated with teams to define project objectives and deploy, implementing NLP algorithms for relevant responses.</li>
+                                <li>Collaborated with teams to define project objectives and deploy.</li>
+                                <li>implementing NLP algorithms for relevant responses.</li>
                             </ul>
                         </div>
                     </div>
